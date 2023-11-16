@@ -1,11 +1,36 @@
-/* Project Name:
-    Project Author:
-    Project Year:
-    Project Version:
-
-    
+/* Project Name:One Pages Blog Pages
+    Project Author:M.Mehtap Avcı
+    Project Year:16.11.2023
+    Project Version:1.0
  */
 
+/* Config File */
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin:0;
+}
 body{
     font-family: 'Roboto Slab', serif;
+}
+html{
+    font-size: 15px;
+}
+/* nav */
+nav{
+    opacity:.9 ;
+}
+/* Header */
+header .jumbotron{
+    background-image: url(/img/background.jpg);
+    background-size: cover;
+    background-position: 25% 50%;
+    padding:12rem;
+    height: 40rem;
+    opacity: .9;
+    z-index: -1;
+}
+#header-title-btk{
+    text-transform:uppercase;
+    color: black;
 }
