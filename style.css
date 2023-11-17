@@ -16,9 +16,12 @@ body{
 html{
     font-size: 15px;
 }
+.f20{
+    font-size: .5rem;
+}
 /* nav */
 nav{
-    opacity:.9 ;
+    opacity:.5 ;
 }
 /* Header */
 header .jumbotron{
@@ -27,10 +30,20 @@ header .jumbotron{
     background-position: 25% 50%;
     padding:12rem;
     height: 40rem;
-    opacity: .9;
+    opacity: .7;
     z-index: -1;
+    
 }
 #header-title-btk{
     text-transform:uppercase;
-    color: black;
+    color: rgb(255, 252, 252);
+}
+/* breadcrumb */
+nav ol.breadcrumb{
+    margin-top: -1.2%;
+    background-color: black!important;
+    opacity: .9;
+}
+.col-md-8 img:hover{
+    opacity: .8;
 }
