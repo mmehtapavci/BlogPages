@@ -14,12 +14,24 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@200&display=swap" rel="stylesheet">
     <!-- Font Awasome -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+    <link rel="stylesheet" href="/css/all.css">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <!-- Css Dosyası -->
     <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <!-- jQuery UI -->
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <!-- Your main script -->
+    <script src="main_blog.js"></script>
+
+
 </head>
 
 <body data-spy="scroll" data-target=".navbar" data-offset="45">
@@ -62,12 +74,31 @@
                     <li class="nav-item">
                         <a href="" class="nav-link">İletişim</a>
                     </li>
+                    <li class="nav-item">
+                        <button id="btn-giris" class="ml-2 mt-2"><i class="fas fa-user-lock"></i> </button>
+                    </li>
                 </ul>
             </div>
-
-
         </div>
     </nav>
+
+    <div class="modal fade" id="myUye" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Kapat</h4>
+                </div>
+
+                <div class="modal-body">
+                    <div class="container">
+                        Gövde
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
 
     <header>
         <div class="jumbotron text-white bg-dark">
@@ -246,7 +277,8 @@
                     <header>
                         <h6 class="text-center mt-2">Arama</h6>
                         <div class="card-body">
-                            <div class="input-group"><input type="text" class="form-control" placeholder="Arama Alanı">
+                            <div class="input-group"><input id="tags" type="text" class="form-control"
+                                    placeholder="Arama Alanı">
                             </div>
                         </div>
                     </header>
@@ -351,9 +383,7 @@
 
 
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
         integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
         crossorigin="anonymous"></script>
