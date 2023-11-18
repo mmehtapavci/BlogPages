@@ -12,6 +12,8 @@
 }
 body{
     font-family: 'Roboto Slab', serif;
+    background-color: rgb(233, 245, 255);
+    position: relative;
 }
 html{
     font-size: 15px;
@@ -32,7 +34,6 @@ header .jumbotron{
     height: 40rem;
     opacity: .7;
     z-index: -1;
-    
 }
 #header-title-btk{
     text-transform:uppercase;
@@ -46,4 +47,9 @@ nav ol.breadcrumb{
 }
 .col-md-8 img:hover{
     opacity: .8;
+}
+/* FOOTER */
+footer{
+    min-height: 20rem;
+    width: auto;
 }

@@ -22,7 +22,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 
-<body>
+<body data-spy="scroll" data-target=".navbar" data-offset="45">
     <!-- MENU -->
     <nav class=" navbar fixed-top navbar-expand-sm bg-dark navbar-dark">
         <div class="container">
@@ -33,18 +33,34 @@
             </button>
 
             <div class="collapse  navbar-collapse" id="menu">
+
+
+                <ul class="ml-auto navbar-nav">
+                    <li class="nav-item">
+                        <a href="#html-btk" class="nav-link">HTML5</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#css-btk" class="nav-link">CSS3</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#js-btk" class="nav-link">JS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#jquery-btk" class="nav-link">Jquery</a>
+                    </li>
+                </ul>
                 <ul class="ml-auto navbar-nav">
                     <li class="nav-item">
                         <a href="" class="nav-link active">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a href="html5.html" class="nav-link">HTML5</a>
+                        <a href="html5.html" class="nav-link">Hakkımızda</a>
                     </li>
                     <li class="nav-item">
-                        <a href="" class="nav-link">CSS3</a>
+                        <a href="" class="nav-link">Misyonumuz</a>
                     </li>
                     <li class="nav-item">
-                        <a href="" class="nav-link">JS</a>
+                        <a href="" class="nav-link">İletişim</a>
                     </li>
                 </ul>
             </div>
@@ -69,7 +85,7 @@
             <div class="col-md-8">
                 <div class="card mb-4">
                     <div class="card-header">
-                        <h2>HTML5</h2>
+                        <h2 id="html-btk">HTML5</h2>
                     </div>
                     <img src="img/header.jpg" alt="" class="card-img-top">
                     <div class="card-body">
@@ -89,7 +105,7 @@
                 </div>
                 <div class="card mb-4">
                     <div class="card-header">
-                        <h2>CSS3</h2>
+                        <h2 id="css-btk">CSS3</h2>
                     </div>
                     <img src="img/header2.jpg" alt="" class="card-img-top">
                     <div class="card-body">
@@ -109,7 +125,7 @@
                 </div>
                 <div class="card mb-4">
                     <div class="card-header">
-                        <h2>JS</h2>
+                        <h2 id="js-btk">JS</h2>
                     </div>
                     <img src="img/header3.jpg" alt="" class="card-img-top">
                     <div class="card-body">
@@ -149,7 +165,7 @@
                 </div>
                 <div class="card mb-4">
                     <div class="card-header">
-                        <h2>BOOSTRAP</h2>
+                        <h2 id="jquery-btk">Jquery</h2>
                     </div>
                     <img src="img/header5.jpg" alt="" class="card-img-top">
                     <div class="card-body">
@@ -166,13 +182,69 @@
                     </div>
                     <div style="opacity: 0.6;" class="card-footer">Date:16 Kasım 2023</div>
                 </div>
+
+                <div class="card mb-4">
+                    <div class="card-header">
+                        <h2>Table</h2>
+                    </div>
+
+                    <div class="card-body">
+                        <div class="table-responsive">
+                            <table class="table table-bordered table-hover table-dark table-striped">
+                                <caption>Başlık</caption>
+                                <thead>
+                                    <tr>
+                                        <th>1. alan</th>
+                                        <th>2.alan</th>
+                                        <th>3.alan</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Alan</td>
+                                        <td>Alan</td>
+                                        <td>Alan</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Alan</td>
+                                        <td>Alan</td>
+                                        <td>Alan</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Alan</td>
+                                        <td>Alan</td>
+                                        <td>Alan</td>
+                                    </tr>
+                                </tbody>
+                                <tfoot>
+                                    <tr>
+                                        <td class="text-center" colspan="3">Btk Akademi</td>
+                                    </tr>
+                                </tfoot>
+                            </table>
+                        </div>
+
+                    </div>
+                    <div style="opacity: 0.6;" class="card-footer">Date:16 Kasım 2023</div>
+                </div>
             </div>
+
+
+            <!-- <div class="card card-columns mb-4 ">
+                <div class="bg-danger" style="line-height: 15rem;"></div>
+            </div>
+            <div class="card card-columns mb-4 ">
+                <div class="bg-danger" style="line-height: 15rem;"></div>
+            </div>
+            <div class="card card-columns mb-4 ">
+                <div class="bg-danger" style="line-height: 15rem;"></div>
+            </div> -->
 
             <!-- SAĞ TARAF -->
             <div class="col-md-4">
                 <div class="card mb-5">
                     <header>
-                        <h6>Arama</h6>
+                        <h6 class="text-center mt-2">Arama</h6>
                         <div class="card-body">
                             <div class="input-group"><input type="text" class="form-control" placeholder="Arama Alanı">
                             </div>
@@ -227,8 +299,38 @@
 
             </div>
         </div>
+        <nav aria-label="Page navigation example">
+            <ul class="pagination justify-content-center">
+                <li class="page-item disabled">
+                    <a class="page-link">Önceki</a>
+                </li>
+                <li class="page-item"><a class="page-link" href="#">1</a></li>
+                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                <li class="page-item">
+                    <a class="page-link" href="#">İleri</a>
+                </li>
+            </ul>
+        </nav>
     </main>
 
+    <footer class="text-white bg-dark">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6  mt-5">
+                    <ul>
+                        <li><a href="">deneme2</a></li>
+                        <li><a href=""></a>deneme3</li>
+                        <li><a href=""></a>deneme4</li>
+                        <li><a href=""></a>deneme5</li>
+                    </ul>
+                </div>
+                <div class="col-md-6 mt-5">
+                    <p> Bütün Haklar Saklıdır. &copy; </p>
+                </div>
+            </div>
+        </div>
+    </footer>
 
 
 
