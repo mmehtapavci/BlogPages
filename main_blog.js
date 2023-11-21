@@ -33,33 +33,43 @@ $(function () {
     });
 });
 
-// user_email user_phone user_ipassword
-// Form validation Jquery
 $(function () {
     $("#btnSubmit").click(function () {
 
         var email, phone, password;
         email = $("#user_email").val();
-        phone = $("#user_phone").val();
-        password = $("#user_password").val();
+        email = $.trim(email);
 
+        phone = $("#user_phone").val();
+        phone = jQuery.trim(phone);
+
+        password = $("#user_password").val();
+        password = password.trim(password);
         // validation_email validation_phone validation_password
         if (email == "") {
             $("#validation_email").html("Email boş geçilemez!");
-        } else if (validateEmail(email) == false) {
-            $('#validation_email').html("E-maili Uygun Formatta Giriniz..");
+        } else if (!validateEmail(email)) {
+            $('#validation_email').html("E-maili uygun formatta giriniz.");
         }
 
         if (phone == "") {
             $("#validation_phone").html("Telefon boş geçilemez!");
-        } else if ($.isNumeric(phone) == false) {
-            $('#validation_phone').html("Sayı Girmelisiniz..");
+        } else if (!$.isNumeric(phone)) {
+            $('#validation_phone').html("Sayı girmelisiniz.");
         }
 
         if (password == "") {
-            $("#validation_password").html("Şifre Boş Geçilemez!");
+            $("#validation_password").html("Şifre boş geçilemez!");
         } else {
-            // Add your additional password validation logic here
+            // Ek şifre doğrulama mantığınızı buraya ekleyin
         }
+
+        // Email doğrulama fonksiyonu-Validation Email Regex
+        function validateEmail(email) {
+            var regex = /\b[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Z|a-z]{2,}\b/;
+            return regex.test(email);
+        }
+
+        // Phone doğrulama fonksiyonu-Validation Phone Number Regex
     });
 });
