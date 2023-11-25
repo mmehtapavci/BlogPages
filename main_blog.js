@@ -90,4 +90,16 @@ $(function () {
 $(function () {
     $("#picture_1").tooltip();
     $("#btn_tooltip").tooltip();
+    // 2.Resim
+    $("#picture_2").tooltip();
+    $("#btn_tooltip2").tooltip();
+    // 3.Resim
+    $("#picture_3").tooltip();
+    $("#btn_tooltip3").tooltip();
+    // 4.Resim
+    $("#picture_4").tooltip();
+    $("#btn_tooltip4").tooltip();
+    // 5.Resim
+    $("#picture_5").tooltip();
+    $("#btn_tooltip5").tooltip();
 })
